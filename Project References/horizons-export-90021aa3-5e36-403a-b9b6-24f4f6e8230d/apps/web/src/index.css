@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 43% 93%;
+    --foreground: 96 53% 20%;
+    
+    --primary: 45 82% 46%;
+    --primary-foreground: 96 53% 20%;
+    
+    --secondary: 18 63% 47%;
+    --secondary-foreground: 40 43% 93%;
+    
+    --muted: 40 20% 85%;
+    --muted-foreground: 96 30% 25%;
+    
+    --accent: 45 82% 46%;
+    --accent-foreground: 96 53% 20%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 96 53% 20%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 96 53% 20%;
+    
+    --border: 40 20% 80%;
+    --input: 40 20% 80%;
+    --ring: 45 82% 46%;
+    
+    --radius: 0.75rem;
+    
+    --jungle-green: 96 53% 20%;
+    --terracotta: 18 63% 47%;
+    --cream: 40 43% 93%;
+    --jaguar-gold: 45 82% 46%;
+    
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  .dark {
+    --background: 96 53% 8%;
+    --foreground: 40 43% 93%;
+    
+    --primary: 45 82% 46%;
+    --primary-foreground: 96 53% 20%;
+    
+    --secondary: 18 63% 38%;
+    --secondary-foreground: 40 43% 93%;
+    
+    --muted: 96 20% 15%;
+    --muted-foreground: 40 20% 70%;
+    
+    --accent: 45 82% 46%;
+    --accent-foreground: 96 53% 20%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --card: 96 30% 12%;
+    --card-foreground: 40 43% 93%;
+    
+    --popover: 96 30% 12%;
+    --popover-foreground: 40 43% 93%;
+    
+    --border: 96 20% 20%;
+    --input: 96 20% 20%;
+    --ring: 45 82% 46%;
+    
+    --jungle-green: 96 53% 20%;
+    --terracotta: 18 63% 47%;
+    --cream: 40 43% 93%;
+    --jaguar-gold: 45 82% 46%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  * {
+    border-color: hsl(var(--border));
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: clip;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .badge-easy {
+    background-color: hsl(var(--jungle-green));
+    color: hsl(var(--cream));
+  }
+  
+  .badge-moderate {
+    background-color: hsl(var(--jaguar-gold));
+    color: hsl(var(--jungle-green));
+  }
+  
+  .badge-challenging {
+    background-color: hsl(var(--terracotta));
+    color: hsl(var(--cream));
+  }
+  
+  .badge-duration {
+    background-color: hsl(var(--jungle-green) / 0.1);
+    color: hsl(var(--jungle-green));
+    border: 1px solid hsl(var(--jungle-green) / 0.2);
+  }
+}
