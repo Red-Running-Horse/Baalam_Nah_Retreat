@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Facebook, Instagram, MessageCircle, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext.jsx';
 
-const logoImage = new URL('../../../../Q04_Logo_Balam Nah.avif', import.meta.url).href;
+const logoImage = '/logo-baalam-nah.avif';
 
 const Footer = () => {
   const { t } = useLanguage();
