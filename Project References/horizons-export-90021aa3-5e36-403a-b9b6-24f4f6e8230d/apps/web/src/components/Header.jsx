@@ -6,6 +6,8 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext.jsx';
 
+const logoImage = new URL('../../../../Q04_Logo_Balam Nah.avif', import.meta.url).href;
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();
@@ -46,9 +48,11 @@ const Header = () => {
             to="/"
             className="flex items-center space-x-2 transition-opacity duration-200 hover:opacity-80"
           >
-            <span className="text-2xl font-bold text-primary" style={{ letterSpacing: '-0.02em' }}>
-              Baalam Nah
-            </span>
+            <img
+              src={logoImage}
+              alt="Baalam Nah"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -89,7 +93,11 @@ const Header = () => {
               <SheetContent side="right" className="w-[280px] sm:w-[320px]">
                 <div className="flex flex-col space-y-6 mt-8">
                   <div className="flex items-center justify-between pb-4 border-b">
-                    <span className="text-xl font-bold text-primary">Baalam Nah</span>
+                    <img
+                      src={logoImage}
+                      alt="Baalam Nah"
+                      className="h-10 w-auto object-contain"
+                    />
                     <Button
                       variant="ghost"
                       size="sm"

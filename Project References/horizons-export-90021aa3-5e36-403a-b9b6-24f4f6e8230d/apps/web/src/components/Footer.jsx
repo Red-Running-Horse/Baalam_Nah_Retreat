@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PawPrint as Paw, Facebook, Instagram, MessageCircle, MapPin } from 'lucide-react';
+import { Facebook, Instagram, MessageCircle, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext.jsx';
+
+const logoImage = new URL('../../../../Q04_Logo_Balam Nah.avif', import.meta.url).href;
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -80,21 +82,12 @@ const Footer = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <Paw 
-              className="h-8 w-8 md:h-10 md:w-10" 
-              style={{ color: 'hsl(var(--cream))' }}
-              aria-hidden="true"
+          <div className="flex items-center justify-center mb-4">
+            <img
+              src={logoImage}
+              alt={content.branding.name}
+              className="h-16 md:h-20 w-auto object-contain"
             />
-            <span 
-              className="text-2xl md:text-3xl font-bold"
-              style={{ 
-                color: 'hsl(var(--cream))',
-                letterSpacing: '-0.02em'
-              }}
-            >
-              {content.branding.name}
-            </span>
           </div>
           <p 
             className="text-center text-sm md:text-base max-w-2xl mx-auto leading-relaxed"
