@@ -11,7 +11,7 @@
     "deploy:dry": "bash ../../../../deploy_baalam_hostinger.sh --dry-run",
     "lint": "eslint . --quiet",
     "lint:warn": "eslint ."
-  }
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
