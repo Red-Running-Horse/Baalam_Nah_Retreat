@@ -28,9 +28,6 @@ if (process.argv.includes('--dev')) {
 }
 
 // ── production build ─────────────────────────────────────────────────────────
-console.log('▶ Installing web app dependencies...');
-execSync('npm install', { cwd: webDir, stdio: 'inherit' });
-
 console.log('▶ Building web app...');
 execSync('npm run build', { cwd: webDir, stdio: 'inherit' });
 

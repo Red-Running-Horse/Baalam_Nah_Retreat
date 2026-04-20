@@ -2,6 +2,9 @@
   "name": "baalam-nah-retreat",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "Project References/horizons-export-90021aa3-5e36-403a-b9b6-24f4f6e8230d/apps/web"
+  ],
   "scripts": {
     "continuity:update": "node scripts/update-chat-continuity.js",
     "prebuild": "npm run continuity:update",
