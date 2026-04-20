@@ -3,11 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "continuity:update": "node scripts/update-chat-continuity.js",
+    "prebuild": "npm run continuity:update",
     "build": "node build.js",
-    "dev": "node build.js --dev"
+    "predev": "npm run continuity:update",
+    "dev": "node build.js --dev",
+    "predeploy": "npm run continuity:update",
+    "deploy": "bash deploy_baalam_hostinger.sh",
+    "predeploy:dry": "npm run continuity:update",
+    "deploy:dry": "bash deploy_baalam_hostinger.sh --dry-run"
   },
   "devDependencies": {
-    "vite": "^7.3.1",
-    "@vitejs/plugin-react": "^5.1.4"
+    "@vitejs/plugin-react": "^5.1.4",
+    "eslint": "^10.2.1",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "axios": "^1.15.1"
   }
 }
