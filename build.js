@@ -17,9 +17,6 @@ const webDir = path.join(
   'web'
 );
 
-// vite outputs to ../../../../dist/apps/web relative to apps/web/ = repoRoot/dist/apps/web
-const nestedDist = path.join(repoRoot, 'dist', 'apps', 'web');
-
 const repoRootDist = path.join(repoRoot, 'dist');
 
 // ── dev mode ────────────────────────────────────────────────────────────────
@@ -37,17 +34,29 @@ execSync('npm install', { cwd: webDir, stdio: 'inherit' });
 console.log('▶ Building web app...');
 execSync('npm run build', { cwd: webDir, stdio: 'inherit' });
 
-if (!fs.existsSync(nestedDist)) {
-  console.error('✖ Build output not found at expected path:', nestedDist);
-  process.exit(1);
+const rootIndex = path.join(repoRootDist, 'index.html');
+const legacyAppsDist = path.join(repoRootDist, 'apps', 'web');
+
+if (fs.existsSync(rootIndex)) {
+  console.log('✔ Build complete. Output is in:', repoRootDist);
+  process.exit(0);
 }
 
-console.log('▶ Promoting dist/apps/web → dist/ ...');
-const appsDir = path.join(repoRootDist, 'apps', 'web');
-if (fs.existsSync(appsDir)) {
-  // Move contents of dist/apps/web up to dist/
+if (fs.existsSync(legacyAppsDist)) {
+  console.log('▶ Promoting legacy dist/apps/web → dist/ ...');
+  const promoteTmp = path.join(repoRoot, '.dist-promote-tmp');
+  fs.rmSync(promoteTmp, { recursive: true, force: true });
+  fs.cpSync(legacyAppsDist, promoteTmp, { recursive: true });
+
   fs.rmSync(repoRootDist, { recursive: true, force: true });
-  fs.cpSync(appsDir, repoRootDist, { recursive: true });
+  fs.cpSync(promoteTmp, repoRootDist, { recursive: true });
+  fs.rmSync(promoteTmp, { recursive: true, force: true });
+
+  console.log('✔ Build complete. Output is in:', repoRootDist);
+  process.exit(0);
 }
 
-console.log('✔ Build complete. Output is in:', repoRootDist);
+console.error('✖ Build output not found. Expected one of:');
+console.error('  -', rootIndex);
+console.error('  -', legacyAppsDist);
+process.exit(1);
