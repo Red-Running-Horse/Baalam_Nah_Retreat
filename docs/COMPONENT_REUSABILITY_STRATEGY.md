@@ -366,7 +366,7 @@ All businesses follow this pattern, but with configurable steps:
 ```toml
 # baalam.config.toml
 [business]
-name = "Baalam Nah Retreat"
+name = "Baalam-Nah Retreat"
 id = "baalam_nah_retreat"
 description = "Day retreat at Lagunas de Ocom"
 timezone = "America/Mexico_City"
@@ -478,4 +478,3 @@ When developing Baalam components, ask:
 3. **Build Config File**: Define business logic in config first, code second
 4. **Create npm Package Scaffolding**: Template for next business site
 5. **Document Examples**: Show how each service is extended for different businesses
-

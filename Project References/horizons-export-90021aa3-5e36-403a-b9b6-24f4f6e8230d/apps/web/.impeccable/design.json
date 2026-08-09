@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-09T14:16:36.918-05:00",
+  "title": "Design System: Baalam-Nah",
+  "extensions": {
+    "colorMeta": {
+      "water": {
+        "role": "primary",
+        "displayName": "Deep Water",
+        "canonical": "#073b4c",
+        "tonalRamp": ["oklch(15% 0.035 220)", "oklch(26% 0.047 220)", "oklch(37% 0.052 220)", "oklch(49% 0.049 220)", "oklch(61% 0.041 220)", "oklch(73% 0.032 220)", "oklch(84% 0.021 220)", "oklch(95% 0.009 220)"]
+      },
+      "water-deep": {
+        "role": "neutral",
+        "displayName": "Water Deep",
+        "canonical": "#042a38",
+        "tonalRamp": ["oklch(15% 0.031 222)", "oklch(26% 0.043 222)", "oklch(37% 0.047 222)", "oklch(49% 0.044 222)", "oklch(61% 0.037 222)", "oklch(73% 0.029 222)", "oklch(84% 0.019 222)", "oklch(95% 0.008 222)"]
+      },
+      "lagoon-cyan": {
+        "role": "primary",
+        "displayName": "Lagoon Cyan",
+        "canonical": "#7ee8dc",
+        "tonalRamp": ["oklch(15% 0.055 184)", "oklch(26% 0.080 184)", "oklch(37% 0.103 184)", "oklch(49% 0.122 184)", "oklch(61% 0.130 184)", "oklch(73% 0.119 184)", "oklch(84% 0.083 184)", "oklch(95% 0.027 184)"]
+      },
+      "sun-yellow": {
+        "role": "secondary",
+        "displayName": "Sun Yellow",
+        "canonical": "#ffd166",
+        "tonalRamp": ["oklch(15% 0.050 82)", "oklch(26% 0.078 82)", "oklch(37% 0.105 82)", "oklch(49% 0.132 82)", "oklch(61% 0.157 82)", "oklch(73% 0.174 82)", "oklch(84% 0.142 82)", "oklch(95% 0.045 82)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Ledger Paper",
+        "canonical": "#f3f0e5",
+        "tonalRamp": ["oklch(15% 0.010 90)", "oklch(26% 0.013 90)", "oklch(37% 0.016 90)", "oklch(49% 0.019 90)", "oklch(61% 0.022 90)", "oklch(73% 0.023 90)", "oklch(84% 0.021 90)", "oklch(95% 0.015 90)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Lagoon Ink",
+        "canonical": "#092f3d",
+        "tonalRamp": ["oklch(15% 0.031 220)", "oklch(26% 0.043 220)", "oklch(37% 0.047 220)", "oklch(49% 0.044 220)", "oklch(61% 0.037 220)", "oklch(73% 0.029 220)", "oklch(84% 0.019 220)", "oklch(95% 0.008 220)"]
+      },
+      "warm-white": {
+        "role": "neutral",
+        "displayName": "Warm White",
+        "canonical": "#fffdf7",
+        "tonalRamp": ["oklch(15% 0.006 88)", "oklch(26% 0.008 88)", "oklch(37% 0.010 88)", "oklch(49% 0.012 88)", "oklch(61% 0.014 88)", "oklch(73% 0.015 88)", "oklch(84% 0.013 88)", "oklch(95% 0.008 88)"]
+      },
+      "water-mist": {
+        "role": "neutral",
+        "displayName": "Water Mist",
+        "canonical": "#d7f3ef",
+        "tonalRamp": ["oklch(15% 0.018 184)", "oklch(26% 0.026 184)", "oklch(37% 0.034 184)", "oklch(49% 0.041 184)", "oklch(61% 0.045 184)", "oklch(73% 0.043 184)", "oklch(84% 0.034 184)", "oklch(95% 0.016 184)"]
+      },
+      "ledger-line": {
+        "role": "neutral",
+        "displayName": "Ledger Line",
+        "canonical": "rgba(7, 59, 76, 0.24)",
+        "tonalRamp": ["oklch(15% 0.018 220)", "oklch(26% 0.025 220)", "oklch(37% 0.027 220)", "oklch(49% 0.025 220)", "oklch(61% 0.021 220)", "oklch(73% 0.016 220)", "oklch(84% 0.011 220)", "oklch(95% 0.005 220)"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Monumental Display",
+        "purpose": "Hero and largest brand wordmarks."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Dense, balanced section propositions."
+      },
+      "body": {
+        "displayName": "Visitor Body",
+        "purpose": "Bilingual explanation and practical information."
+      },
+      "label": {
+        "displayName": "Field Label",
+        "purpose": "Coordinates, captions, sources, map tags, and ledger headings."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ledger-offset",
+        "value": "12px 14px 0 rgba(4, 42, 56, 0.4)",
+        "purpose": "Gives the practical visit record the weight of a placed folio."
+      },
+      {
+        "name": "header-lift",
+        "value": "0 12px 30px rgba(4, 42, 56, 0.12)",
+        "purpose": "Separates the fixed paper header from content after scroll."
+      },
+      {
+        "name": "action-offset",
+        "value": "4px 5px 0 #7ee8dc",
+        "purpose": "Crisp hover response on the yellow header action."
+      },
+      {
+        "name": "monument-relief",
+        "value": "7px 9px 0 rgba(4, 42, 56, 0.22)",
+        "purpose": "Maintains giant-wordmark legibility over aerial water."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-quick",
+        "value": "180ms ease",
+        "purpose": "Navigation underlines, action translation, and concise state feedback."
+      },
+      {
+        "name": "surface-standard",
+        "value": "220ms ease",
+        "purpose": "Header color, background, and shadow transitions."
+      },
+      {
+        "name": "route-reveal",
+        "value": "1.5s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Draws the hero route as the landscape is introduced."
+      },
+      {
+        "name": "image-drift",
+        "value": "600ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Restrained scale response on experience photography."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "folio-menu",
+        "value": "980px"
+      },
+      {
+        "name": "stacked-mobile",
+        "value": "680px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "action-primary",
+      "description": "The principal dark-water action used to begin a WhatsApp inquiry.",
+      "html": "<a class=\"ds-action-primary\" href=\"#\"><span>Planear por WhatsApp</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-action-primary { display:flex; align-items:center; gap:.65rem; padding:.95rem 1rem; background:var(--water); color:var(--white); font:800 .8rem/1.6 Manrope,sans-serif; text-decoration:none; transition:background-color 180ms ease; } .ds-action-primary svg { width:18px; margin-left:auto; fill:none; stroke:currentColor; stroke-width:2; } .ds-action-primary:hover { background:var(--water-deep); } .ds-action-primary:focus-visible { outline:3px solid var(--sun); outline-offset:4px; }"
+    },
+    {
+      "name": "Sun Action",
+      "kind": "button",
+      "refersTo": "action-sun",
+      "description": "A compact yellow action used in the fixed desktop header.",
+      "html": "<a class=\"ds-action-sun\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-4.1-.9L3 20l1.2-4.4A8.4 8.4 0 1 1 21 11.5Z\"/></svg><span>Planear visita</span></a>",
+      "css": ".ds-action-sun { display:inline-flex; align-items:center; gap:.55rem; min-height:2.7rem; padding:0 1rem; background:var(--sun); color:var(--water-deep); font:800 .76rem/1.2 Manrope,sans-serif; text-decoration:none; transition:transform 180ms ease,box-shadow 180ms ease; } .ds-action-sun svg { width:17px; fill:none; stroke:currentColor; stroke-width:2; } .ds-action-sun:hover { box-shadow:4px 5px 0 var(--lagoon); transform:translate(-2px,-2px); } .ds-action-sun:focus-visible { outline:3px solid var(--sun); outline-offset:4px; }"
+    },
+    {
+      "name": "Visit Ledger",
+      "kind": "card",
+      "refersTo": "ledger",
+      "description": "The placed-paper record that combines coordinates, visit categories, and a practical action.",
+      "html": "<article class=\"ds-ledger\"><header><span>BITÁCORA DE VISITA</span><span>19.39° N</span></header><p>Un refugio de agua, selva y tiempo compartido.</p><dl><div><dt>EN EL AGUA</dt><dd>Nado · kayak · piscina</dd></div><div><dt>PARA QUEDARSE</dt><dd>Cabañas · domos · campamento</dd></div></dl></article>",
+      "css": ".ds-ledger { max-width:28rem; padding:1.5rem; background:var(--paper); color:var(--ink); box-shadow:12px 14px 0 rgba(4,42,56,.4); font-family:Manrope,sans-serif; } .ds-ledger header { display:flex; justify-content:space-between; padding-bottom:.7rem; border-bottom:1px solid var(--line); font:600 .67rem/1.5 Recursive,monospace; letter-spacing:.08em; } .ds-ledger p { margin:1.15rem 0; font-size:1.08rem; font-weight:700; line-height:1.4; } .ds-ledger dl { margin:0; } .ds-ledger dl div { display:grid; grid-template-columns:8.4rem 1fr; gap:.65rem; padding:.75rem 0; border-top:1px solid var(--line); } .ds-ledger dt { font-size:.72rem; font-weight:800; } .ds-ledger dd { margin:0; font-size:.75rem; }"
+    },
+    {
+      "name": "Folio Navigation Link",
+      "kind": "nav",
+      "description": "A compact desktop link with a directional yellow field-mark underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">La laguna</a><a href=\"#\">Experiencias</a><a href=\"#\">Estancias</a></nav>",
+      "css": ".ds-nav { display:flex; gap:2.5rem; color:var(--water); font:700 .78rem/1.6 Manrope,sans-serif; } .ds-nav a { position:relative; color:inherit; text-decoration:none; } .ds-nav a::after { position:absolute; right:0; bottom:-.55rem; left:0; height:2px; background:var(--sun); content:\"\"; transform:scaleX(0); transform-origin:right; transition:transform 180ms ease; } .ds-nav a:hover::after { transform:scaleX(1); transform-origin:left; } .ds-nav a:focus-visible { outline:3px solid var(--sun); outline-offset:4px; }"
+    },
+    {
+      "name": "Map Label",
+      "kind": "chip",
+      "refersTo": "map-label",
+      "description": "A rectangular annotation that names a real point or phase on a traced route.",
+      "html": "<span class=\"ds-map-label\">ENCUENTRO</span>",
+      "css": ".ds-map-label { display:inline-block; padding:.4rem .65rem; background:var(--sun); color:var(--water-deep); font:600 .68rem/1.5 Recursive,monospace; text-transform:uppercase; }"
+    },
+    {
+      "name": "History Record",
+      "kind": "custom",
+      "description": "A ruled fact row pairing a compact numeric marker with sourced historical context.",
+      "html": "<div class=\"ds-history\"><span>1936</span><p>El Ejido X-Hazil fue fundado por pueblos mayas vinculados a la historia de la Guerra de Castas.</p></div>",
+      "css": ".ds-history { display:grid; grid-template-columns:6.5rem 1fr; gap:1.3rem; padding:1.5rem 0; border-top:1px solid var(--line); color:var(--ink); } .ds-history span { font:600 .95rem/1.5 Recursive,monospace; } .ds-history p { margin:0; font:400 .9rem/1.6 Manrope,sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Living Lagoon Ledger",
+    "overview": "Baalam-Nah is documented like a field record that happens to be alive: monumental names, precise coordinates, folio indexes, route traces, and practical entries sit directly against documentary photographs of the lagoon and property. The system is confident and place-specific rather than resort-polished. Water is both the subject and the organizing device.\n\nIts visual rhythm moves between immersive photographic fields and emphatic blocks of cyan, yellow, paper, and deep blue. Editorial asymmetry, oversized type, square-edged panels, and sparse map notation keep the experience grounded in evidence while giving it a recognizable authored voice.",
+    "keyCharacteristics": [
+      "Monumental condensed display type paired with plainspoken body copy and monospaced field labels.",
+      "Documentary photography used at architectural scale, never as incidental decoration.",
+      "Route lines, coordinates, folio indexes, captions, and ledger rows as recurring information devices.",
+      "Hard-edged color fields and offset structural shadows rather than soft lifestyle styling.",
+      "Responsive compositions that preserve hierarchy while changing from grids to stacked or horizontal-snap sequences."
+    ],
+    "rules": [
+      {
+        "name": "The Field Mark Rule",
+        "body": "Cyan and yellow behave as map annotations and signals; use them decisively, not as ambient decorative gradients.",
+        "section": "colors"
+      },
+      {
+        "name": "The Water Leads Rule",
+        "body": "Deep blue establishes the world, but real lagoon photography is the strongest color field whenever credible imagery is available.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Registers Rule",
+        "body": "Archivo Black names the place, Manrope explains it, and Recursive records it. Do not exchange their jobs.",
+        "section": "typography"
+      },
+      {
+        "name": "The Monument and Note Rule",
+        "body": "Large headings should feel nearly architectural; supporting labels should remain compact enough to read as notation.",
+        "section": "typography"
+      },
+      {
+        "name": "The Placed Paper Rule",
+        "body": "Offset shadows belong to ledger-like objects and tactile actions, never to every content surface.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do let original photography occupy full sections or substantial grid areas.",
+      "Do pair each expressive composition with practical information, labels, or a clear action.",
+      "Do use route traces, rules, captions, and coordinates when they organize genuine place-based information.",
+      "Do maintain full Spanish and English behavior without shrinking the intended hierarchy.",
+      "Do preserve visible keyboard focus and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't round panels, actions, labels, or image frames into generic hospitality components.",
+      "Don't substitute stock eco-resort imagery or decorative tropical motifs for documentary evidence.",
+      "Don't use yellow or cyan as unstructured decoration; each bright mark should signal, locate, or separate.",
+      "Don't flatten repeated photographs into equal cards when an uneven editorial sequence can tell the story.",
+      "Don't style X-Hazil Sur or Maya community context as exotic texture; keep historical notes sourced, restrained, and legible."
+    ]
+  }
+}
