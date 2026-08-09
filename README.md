@@ -31,6 +31,7 @@ Create a GitHub `production` environment with these secrets:
 | `HOSTINGER_PORT` | Hostinger SSH port, commonly `65002` |
 | `HOSTINGER_USER` | Hostinger SSH username |
 | `HOSTINGER_SSH_KEY` | Complete private SSH key matching a public key authorized by Hostinger |
+| `HOSTINGER_KNOWN_HOSTS` | Hostinger SSH host-key lines produced by `ssh-keyscan -p <port> <host>` |
 | `HOSTINGER_WEB_ROOT` | `/home/<user>/domains/baalamnah.fcpqroo.mx/public_html` |
 
 The deploy key added to GitHub allows Hostinger to read the repository; it is not the private SSH key GitHub Actions needs to upload the built site.
