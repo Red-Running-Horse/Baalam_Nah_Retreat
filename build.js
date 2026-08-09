@@ -29,6 +29,7 @@ if (process.argv.includes('--dev')) {
 
 // ── production build ─────────────────────────────────────────────────────────
 console.log('▶ Building web app...');
+fs.rmSync(repoRootDist, { recursive: true, force: true });
 execSync('npm run build', { cwd: webDir, stdio: 'inherit' });
 
 const rootIndex = path.join(repoRootDist, 'index.html');

@@ -17,9 +17,9 @@
     "deploy:dry": "bash deploy_baalam_hostinger.sh --dry-run"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.1.4",
+    "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^10.2.1",
-    "vite": "^7.3.1"
+    "vite": "^6.4.3"
   },
   "dependencies": {
     "axios": "^1.15.1"

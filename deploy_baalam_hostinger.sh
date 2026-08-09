@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Deploy Baalam Nah static site to Hostinger.
+# Deploy the Baalam-Nah static site to Hostinger.
 #
 # Usage:
 #   bash deploy_baalam_hostinger.sh
@@ -26,8 +26,8 @@ fi
 SSH_HOST="${SSH_HOST:-82.197.80.20}"
 SSH_PORT="${SSH_PORT:-65002}"
 SSH_USER="${SSH_USER:-u853557685}"
-REMOTE_WEB_ROOT="${REMOTE_WEB_ROOT:-/home/u853557685/domains/balamnah.sol-kin.com/public_html}"
-SITE_URL="${SITE_URL:-https://balamnah.sol-kin.com}"
+REMOTE_WEB_ROOT="${REMOTE_WEB_ROOT:-/home/u853557685/domains/baalamnah.fcpqroo.mx/public_html}"
+SITE_URL="${SITE_URL:-https://baalamnah.fcpqroo.mx}"
 APP_DIR="${APP_DIR:-$SCRIPT_DIR/Project References/horizons-export-90021aa3-5e36-403a-b9b6-24f4f6e8230d/apps/web}"
 DIST_DIR="${DIST_DIR:-}"
 SSH_KEY_PATH="${SSH_KEY_PATH:-$HOME/.ssh/hostinger_deploy_ed25519}"
@@ -82,7 +82,7 @@ run_remote() {
 }
 
 echo "=========================================="
-echo "  BAALAM NAH DEPLOY (HOSTINGER STATIC)"
+echo "  BAALAM-NAH DEPLOY (HOSTINGER STATIC)"
 echo "=========================================="
 echo "Remote: $REMOTE"
 echo "Path:   $REMOTE_WEB_ROOT"
@@ -144,11 +144,12 @@ if command -v rsync >/dev/null 2>&1; then
     rsync_flags+=(--delete)
   fi
   if [[ "$DRY_RUN" -eq 1 ]]; then
-    rsync_flags+=(--dry-run)
+    printf '[dry-run] rsync'
+    printf ' %q' "${rsync_flags[@]}" -e "$RSYNC_RSH" "$DIST_DIR/" "$REMOTE:$REMOTE_WEB_ROOT/"
+    printf '\n'
+  else
+    rsync "${rsync_flags[@]}" -e "$RSYNC_RSH" "$DIST_DIR/" "$REMOTE:$REMOTE_WEB_ROOT/"
   fi
-
-  # shellcheck disable=SC2086
-  rsync "${rsync_flags[@]}" -e "$RSYNC_RSH" "$DIST_DIR/" "$REMOTE:$REMOTE_WEB_ROOT/"
 else
   echo "Warning: rsync not found. Falling back to scp recursive copy."
   if [[ "$DRY_RUN" -eq 1 ]]; then

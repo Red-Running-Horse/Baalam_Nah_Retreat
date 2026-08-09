@@ -7,7 +7,7 @@ Use this one-page reference while coding to maintain reusability.
 ### 1️⃣ NO HARDCODING
 ```javascript
 // ❌ DON'T DO THIS
-const RETREAT_NAME = "Baalam Nah Retreat";
+const RETREAT_NAME = "Baalam-Nah Retreat";
 const TOKEN_REWARD = 50;
 const MAX_GUESTS = 50;
 
@@ -122,7 +122,7 @@ Your config file should answer:
 ```toml
 # WHAT is this business?
 [business]
-name = "Baalam Nah Retreat"
+name = "Baalam-Nah Retreat"
 type = "group_experience"
 
 # WHEN are they available?
@@ -342,4 +342,3 @@ When you make a reusability decision, record it:
 - ❓ You have questions about patterns → Check COMPONENT_REUSABILITY_STRATEGY.md
 
 Remember: **Building once for 100 businesses is better than building 100 times for 1 business.**
-
