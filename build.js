@@ -18,6 +18,17 @@ const webDir = path.join(
 );
 
 const repoRootDist = path.join(repoRoot, 'dist');
+const compatibilityAssets = path.join(repoRoot, 'deployment', 'compatibility-assets');
+
+function copyCompatibilityAssets() {
+  if (!fs.existsSync(compatibilityAssets)) {
+    return;
+  }
+
+  const assetsDist = path.join(repoRootDist, 'assets');
+  fs.mkdirSync(assetsDist, { recursive: true });
+  fs.cpSync(compatibilityAssets, assetsDist, { recursive: true });
+}
 
 // ── dev mode ────────────────────────────────────────────────────────────────
 if (process.argv.includes('--dev')) {
@@ -36,6 +47,7 @@ const rootIndex = path.join(repoRootDist, 'index.html');
 const legacyAppsDist = path.join(repoRootDist, 'apps', 'web');
 
 if (fs.existsSync(rootIndex)) {
+  copyCompatibilityAssets();
   console.log('✔ Build complete. Output is in:', repoRootDist);
   process.exit(0);
 }
@@ -49,6 +61,7 @@ if (fs.existsSync(legacyAppsDist)) {
   fs.rmSync(repoRootDist, { recursive: true, force: true });
   fs.cpSync(promoteTmp, repoRootDist, { recursive: true });
   fs.rmSync(promoteTmp, { recursive: true, force: true });
+  copyCompatibilityAssets();
 
   console.log('✔ Build complete. Output is in:', repoRootDist);
   process.exit(0);
