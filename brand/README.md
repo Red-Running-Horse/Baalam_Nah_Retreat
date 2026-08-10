@@ -1,33 +1,40 @@
 # Baalam-Nah logo kit
 
-The **Two Shores** mark places the lagoon first. Its opposing shorelines create a water channel; the small eyes and nose reveal a jaguar only on a second look.
+The approved Baalam-Nah identity follows the connected lagoon system with careful jaguar tracks. The tracks communicate watchfulness and measured movement rather than danger or aggression.
 
-## Files
+## Production assets
 
-- `baalam-nah-symbol.svg` — primary three-color symbol
-- `baalam-nah-symbol-one-color.svg` — fabrication, engraving, vinyl, stamps, and single-ink printing
-- `baalam-nah-lockup-horizontal.svg` — primary horizontal wordmark
-- `baalam-nah-lockup-reversed.svg` — wordmark for dark photography or Deep Water backgrounds
-- `baalam-nah-social-avatar.svg` and `.png` — square profile image
+- `baalam-nah-logo-light-compact.png` — transparent dark artwork for light backgrounds
+- `baalam-nah-logo-dark-compact.png` — transparent warm-white artwork for dark backgrounds
+- `baalam-nah-logo-dark-full.png` — full dark-background lockup with descriptor
+- `baalam-nah-social-share.jpg` — 1200 × 630 website/social sharing image
+- `baalam-nah-app-icon.png` — 512 × 512 browser and application icon
+
+The original Canva exports are retained unchanged in `source/`.
+
+## Usage
+
+- Use the light compact logo on white, Ledger Paper, Lagoon Cyan, or Sun Yellow.
+- Use the dark compact logo over Deep Water, Water Deep, or dark photography.
+- Use the full dark logo where the descriptor remains legible, such as the website footer, presentations, and large signs.
+- Do not recolor individual paw prints, distort the lagoon chain, add effects, or place the logo inside an unrelated badge.
 
 ## Clear space
 
-Keep clear space around the mark equal to the height of one yellow eye. Do not place other text or marks inside this area.
+Keep clear space around the logo equal to the height of the capital **B** counter. Avoid placing text or high-contrast photography inside this area.
 
 ## Minimum size
 
-- Symbol: 24 px digital or 12 mm print
-- Horizontal lockup: 180 px digital or 45 mm print
-- Roadside sign: use the one-color symbol when fabrication cannot reproduce all three colors
+- Compact lockup: 170 px digital or 45 mm print
+- Full lockup with descriptor: 320 px digital or 90 mm print
+- App icon: 32 px minimum
 
 ## Colors
 
 - Deep Water: `#073b4c`
 - Water Deep: `#042a38`
-- Lagoon Cyan: `#7ee8dc`
-- Sun Yellow: `#ffd166`
 - Warm White: `#fffdf7`
 
 ## Production note
 
-The lockup SVG uses Archivo Black for the wordmark. Before sending it to a sign fabricator, open it in Figma, Inkscape, or Affinity Designer and convert the text to outlines so the letterforms cannot be substituted.
+These supplied assets are raster PNG files. For large roadside fabrication, request an SVG, PDF, or EPS vector export from Canva before sending the logo to a sign vendor.

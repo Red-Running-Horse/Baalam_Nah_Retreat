@@ -134,9 +134,9 @@
   },
   "components": [
     {
-      "name": "Two Shores Brand Mark",
+      "name": "Watchful Lagoon Brand Mark",
       "kind": "custom",
-      "description": "The primary identity symbol: two lagoon shorelines reveal a subtle jaguar face in the water channel.",
+      "description": "The primary identity: connected lagoons surrounded by careful jaguar tracks, expressing watchfulness without aggression.",
       "html": "<svg class=\"ds-logo\" viewBox=\"0 0 220 180\" aria-label=\"Baalam-Nah\"><path class=\"shore\" d=\"M18 42c42-25 85-26 123-2 23 15 42 18 63 12-16 25-39 39-67 43-47 7-87-11-119-53Z\"/><path class=\"shore\" d=\"M19 138c32-41 71-59 118-52 28 4 51 18 67 43-21-6-41-3-64 12-37 24-80 23-121-3Z\"/><path class=\"channel\" d=\"M76 88c13-12 25-20 35-24 11 4 23 12 35 24-9 4-16 11-19 20-11-5-22-5-33 0-3-9-9-16-18-20Z\"/></svg>",
       "css": ".ds-logo { width:220px; height:auto; } .ds-logo .shore { fill:var(--water); } .ds-logo .channel { fill:var(--lagoon); }"
     },
@@ -194,7 +194,7 @@
       "Monumental condensed display type paired with plainspoken body copy and monospaced field labels.",
       "Documentary photography used at architectural scale, never as incidental decoration.",
       "Route lines, coordinates, folio indexes, captions, and ledger rows as recurring information devices.",
-      "The Two Shores logo: opposing lagoon edges reveal a jaguar only on a second look.",
+      "The approved logo traces connected lagoons with careful jaguar tracks, expressing watchfulness without aggression.",
       "Hard-edged color fields and offset structural shadows rather than soft lifestyle styling.",
       "Responsive compositions that preserve hierarchy while changing from grids to stacked or horizontal-snap sequences."
     ],

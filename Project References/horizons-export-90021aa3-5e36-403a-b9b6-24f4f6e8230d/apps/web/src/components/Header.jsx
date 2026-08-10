@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Globe2, Menu, MessageCircle, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import { getWhatsAppUrl } from '../lib/contact.js';
-import LogoMark from './LogoMark.jsx';
+import logoDark from '../../../../../../brand/baalam-nah-logo-dark-compact.png';
+import logoLight from '../../../../../../brand/baalam-nah-logo-light-compact.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,16 +32,20 @@ const Header = () => {
   ];
 
   const closeMenu = () => setMenuOpen(false);
+  const solidHeader = scrolled || menuOpen;
 
   return (
-    <header className={`site-header ${scrolled || menuOpen ? 'is-solid' : ''}`}>
+    <header className={`site-header ${solidHeader ? 'is-solid' : ''}`}>
       <a
         className="wordmark"
         href="#inicio"
         aria-label={t({ es: 'Baalam-Nah, inicio', en: 'Baalam-Nah, home' })}
       >
-        <LogoMark className="wordmark-symbol" />
-        <span>Baalam-Nah</span>
+        <img
+          className="wordmark-logo"
+          src={solidHeader ? logoLight : logoDark}
+          alt=""
+        />
       </a>
 
       <nav className="desktop-nav" aria-label={t({ es: 'Navegación principal', en: 'Primary navigation' })}>
