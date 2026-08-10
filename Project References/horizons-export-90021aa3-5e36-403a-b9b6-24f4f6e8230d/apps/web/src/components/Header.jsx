@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Globe2, Menu, MessageCircle, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import { getWhatsAppUrl } from '../lib/contact.js';
+import LogoMark from './LogoMark.jsx';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ const Header = () => {
         href="#inicio"
         aria-label={t({ es: 'Baalam-Nah, inicio', en: 'Baalam-Nah, home' })}
       >
-        <span className="wordmark-symbol" aria-hidden="true">BN</span>
+        <LogoMark className="wordmark-symbol" />
         <span>Baalam-Nah</span>
       </a>
 

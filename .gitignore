@@ -3,3 +3,4 @@ dist/
 .deploy.env
 .DS_Store
 *.log
+.impeccable/hook.cache.json

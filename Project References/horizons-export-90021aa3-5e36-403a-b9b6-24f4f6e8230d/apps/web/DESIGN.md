@@ -80,6 +80,7 @@ Its visual rhythm moves between immersive photographic fields and emphatic block
 - Monumental condensed display type paired with plainspoken body copy and monospaced field labels.
 - Documentary photography used at architectural scale, never as incidental decoration.
 - Route lines, coordinates, folio indexes, captions, and ledger rows as recurring information devices.
+- The Two Shores logo: opposing lagoon edges reveal a jaguar only on a second look.
 - Hard-edged color fields and offset structural shadows rather than soft lifestyle styling.
 - Responsive compositions that preserve hierarchy while changing from grids to stacked or horizontal-snap sequences.
 
@@ -158,6 +159,10 @@ Depth is structural, not atmospheric. Most surfaces stay flat and are separated 
 The form language is square and documentary. Panels, actions, labels, image frames, and navigation surfaces have no corner rounding. Shape comes from image crops, slight rotations, offset outline frames, irregular grid proportions, dashed routes, circular waypoints, and underlined text actions.
 
 **The No Soft Capsule Rule.** Do not introduce pills or rounded lifestyle cards; map labels are compact rectangles and actions are hard-edged bars.
+
+### Brand mark
+
+The Two Shores symbol is the primary identity mark. Two asymmetrical shoreline forms establish the lagoon first; the cyan channel and three yellow points reveal the eyes and nose of a jaguar only after the water shape has registered. Use the full-color mark wherever possible and the one-color negative-space version for signs, engraving, vinyl, stamps, or other constrained fabrication.
 
 ## Components
 

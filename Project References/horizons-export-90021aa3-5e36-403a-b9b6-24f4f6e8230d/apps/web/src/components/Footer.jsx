@@ -2,13 +2,14 @@ import React from 'react';
 import { ArrowUpRight, MapPin, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import { getWhatsAppUrl } from '../lib/contact.js';
+import LogoMark from './LogoMark.jsx';
 
 const Footer = () => {
   const { language, t } = useLanguage();
 
   return (
     <footer className="site-footer">
-      <div className="footer-mark" aria-hidden="true">BN</div>
+      <LogoMark className="footer-mark" />
       <div className="footer-main">
         <div>
           <a className="footer-wordmark" href="#inicio">Baalam-Nah</a>
