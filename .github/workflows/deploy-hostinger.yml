@@ -91,7 +91,7 @@ jobs:
                 curl --fail --silent --show-error \
                   --head \
                   "https://baalamnah.fcpqroo.mx${script_path}" |
-                  grep -Eiq '^content-type: (application|text)/javascript'; then
+                  grep -Eiq '^content-type: (application|text)/(x-)?javascript'; then
                 rm -f "$homepage"
                 exit 0
               fi
