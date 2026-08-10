@@ -1,6 +1,8 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteBase /
+	# Missing build assets must return 404 instead of the HTML application shell.
+	RewriteRule ^assets/ - [L]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^ index.html [L]
@@ -9,11 +11,15 @@
 <IfModule mod_headers.c>
 	Header set X-Powered-By "Hostinger Horizons"
 
-	# Cache everything on CDN by default
-	Header set Cache-Control "public, s-maxage=604800, max-age=0"
+	# Always revalidate HTML so it cannot reference a retired hashed bundle.
+	<FilesMatch "\.(html?)$">
+		Header set Cache-Control "no-cache, no-store, must-revalidate, s-maxage=0"
+		Header set Pragma "no-cache"
+		Header set Expires "0"
+	</FilesMatch>
 
-	# Cache in browser all assets
+	# Hashed build assets are safe to cache permanently.
 	<If "%{REQUEST_URI} =~ m#^/assets/.*$#">
-		Header set Cache-Control "public, max-age=604800"
+		Header set Cache-Control "public, max-age=31536000, immutable"
 	</If>
 </IfModule>

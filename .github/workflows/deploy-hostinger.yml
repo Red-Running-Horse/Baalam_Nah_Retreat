@@ -65,21 +65,39 @@ jobs:
           ssh -i ~/.ssh/hostinger -p "$HOSTINGER_PORT" \
             "$HOSTINGER_USER@$HOSTINGER_HOST" \
             "mkdir -p '$HOSTINGER_WEB_ROOT'"
-          rsync -az --delete \
+          # Keep earlier hashed bundles so CDN-cached HTML remains functional
+          # while edge caches revalidate after a release.
+          rsync -az --delete --exclude 'assets/' \
             -e "ssh -i ~/.ssh/hostinger -p $HOSTINGER_PORT" \
             dist/ \
             "$HOSTINGER_USER@$HOSTINGER_HOST:$HOSTINGER_WEB_ROOT/"
+          rsync -az \
+            -e "ssh -i ~/.ssh/hostinger -p $HOSTINGER_PORT" \
+            dist/assets/ \
+            "$HOSTINGER_USER@$HOSTINGER_HOST:$HOSTINGER_WEB_ROOT/assets/"
 
       - name: Verify production site
         run: |
           for attempt in 1 2 3 4 5; do
+            homepage="$(mktemp)"
             if curl --fail --silent --show-error \
+              --header "Cache-Control: no-cache" \
               --retry 2 \
-              https://baalamnah.fcpqroo.mx/ |
-              grep --quiet "Baalam-Nah"; then
-              exit 0
+              "https://baalamnah.fcpqroo.mx/?deployment=${GITHUB_SHA}" \
+              --output "$homepage"; then
+              script_path="$(grep -oE 'src="[^"]+\.js"' "$homepage" | head -1 | cut -d'"' -f2)"
+              if grep --quiet "Baalam-Nah" "$homepage" &&
+                test -n "$script_path" &&
+                curl --fail --silent --show-error \
+                  --head \
+                  "https://baalamnah.fcpqroo.mx${script_path}" |
+                  grep -Eiq '^content-type: (application|text)/javascript'; then
+                rm -f "$homepage"
+                exit 0
+              fi
             fi
+            rm -f "$homepage"
             sleep 10
           done
-          echo "The deployed homepage did not return the expected Baalam-Nah brand."
+          echo "The deployed homepage or JavaScript bundle was not served correctly."
           exit 1
