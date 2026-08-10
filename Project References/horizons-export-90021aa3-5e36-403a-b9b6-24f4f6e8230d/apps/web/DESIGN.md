@@ -80,7 +80,7 @@ Its visual rhythm moves between immersive photographic fields and emphatic block
 - Monumental condensed display type paired with plainspoken body copy and monospaced field labels.
 - Documentary photography used at architectural scale, never as incidental decoration.
 - Route lines, coordinates, folio indexes, captions, and ledger rows as recurring information devices.
-- The Two Shores logo: opposing lagoon edges reveal a jaguar only on a second look.
+- The approved logo traces connected lagoons with careful jaguar tracks, expressing watchfulness without aggression.
 - Hard-edged color fields and offset structural shadows rather than soft lifestyle styling.
 - Responsive compositions that preserve hierarchy while changing from grids to stacked or horizontal-snap sequences.
 
@@ -162,7 +162,7 @@ The form language is square and documentary. Panels, actions, labels, image fram
 
 ### Brand mark
 
-The Two Shores symbol is the primary identity mark. Two asymmetrical shoreline forms establish the lagoon first; the cyan channel and three yellow points reveal the eyes and nose of a jaguar only after the water shape has registered. Use the full-color mark wherever possible and the one-color negative-space version for signs, engraving, vinyl, stamps, or other constrained fabrication.
+The approved logo combines the connected lagoon system with measured jaguar tracks. The lagoon chain remains the dominant form; tracks weave around it to communicate caution, attention, and respectful movement through the property rather than threat. Use the dark-lettered transparent lockup on light fields and the warm-white lockup on Deep Water, Water Deep, or dark photography. The descriptor version belongs only at sizes where `LAGUNA · NATURALEZA · COMUNIDAD` stays legible.
 
 ## Components
 

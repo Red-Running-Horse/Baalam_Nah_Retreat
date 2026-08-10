@@ -2,17 +2,18 @@ import React from 'react';
 import { ArrowUpRight, MapPin, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import { getWhatsAppUrl } from '../lib/contact.js';
-import LogoMark from './LogoMark.jsx';
+import logoDarkFull from '../../../../../../brand/baalam-nah-logo-dark-full.png';
 
 const Footer = () => {
   const { language, t } = useLanguage();
 
   return (
     <footer className="site-footer">
-      <LogoMark className="footer-mark" />
       <div className="footer-main">
         <div>
-          <a className="footer-wordmark" href="#inicio">Baalam-Nah</a>
+          <a className="footer-wordmark" href="#inicio" aria-label="Baalam-Nah">
+            <img src={logoDarkFull} alt="" />
+          </a>
           <p>{t({
             es: 'Un día distinto, organizado por el agua.',
             en: 'A different kind of day, shaped by the water.',
