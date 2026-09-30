@@ -1,5 +1,5 @@
 ---
-name: Baalam-Nah
+name: Balam-Nah
 description: A living lagoon ledger for a place shaped by water, land, and community.
 colors:
   water: "#073b4c"
@@ -66,13 +66,13 @@ components:
     padding: "0.4rem 0.65rem"
 ---
 
-# Design System: Baalam-Nah
+# Design System: Balam-Nah
 
 ## Overview
 
 **Creative North Star: "The Living Lagoon Ledger"**
 
-Baalam-Nah is documented like a field record that happens to be alive: monumental names, precise coordinates, folio indexes, route traces, and practical entries sit directly against documentary photographs of the lagoon and property. The system is confident and place-specific rather than resort-polished. Water is both the subject and the organizing device.
+Balam-Nah is documented like a field record that happens to be alive: monumental names, precise coordinates, folio indexes, route traces, and practical entries sit directly against documentary photographs of the lagoon and property. The system is confident and place-specific rather than resort-polished. Water is both the subject and the organizing device.
 
 Its visual rhythm moves between immersive photographic fields and emphatic blocks of cyan, yellow, paper, and deep blue. Editorial asymmetry, oversized type, square-edged panels, and sparse map notation keep the experience grounded in evidence while giving it a recognizable authored voice.
 

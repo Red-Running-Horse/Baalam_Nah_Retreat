@@ -1,6 +1,6 @@
 # Integration Checklist: Building for the Ecosystem
 
-Use this checklist during Baalam_Nah_Retreat development to ensure components are reusable.
+Use this checklist during Balam_Nah_Retreat development to ensure components are reusable.
 
 ## Phase 1: Core Infrastructure
 
@@ -84,8 +84,8 @@ Use this checklist during Baalam_Nah_Retreat development to ensure components ar
 
 ## Phase 4: Business-Specific Implementation
 
-### Baalam Configuration
-- [ ] Create `baalam.config.toml`
+### Balam Configuration
+- [ ] Create `balam.config.toml`
 - [ ] Extract all hardcoded values to config
 - [ ] Document every config option
 - [ ] Create config validation schema
@@ -156,7 +156,7 @@ Use this checklist during Baalam_Nah_Retreat development to ensure components ar
 ### Template Creation
 - [ ] Create project generator/scaffolding tool
 - [ ] Create starter configs for restaurant, hotel, services
-- [ ] Create migration guide from Baalam config
+- [ ] Create migration guide from Balam config
 - [ ] Create troubleshooting guide
 
 ### Knowledge Base
@@ -167,18 +167,18 @@ Use this checklist during Baalam_Nah_Retreat development to ensure components ar
 
 ## Ongoing: Code Review Checklist
 
-For every PR/commit in Baalam, check:
+For every PR/commit in Balam, check:
 
 ```
 Reusability Review
 ├─ [ ] No hardcoded business names/values
 ├─ [ ] Config file used instead of code for business rules
-├─ [ ] Error messages are generic (not Baalam-specific)
+├─ [ ] Error messages are generic (not Balam-specific)
 ├─ [ ] Component exports are well-scoped
 ├─ [ ] Component has clear interface/contract
-├─ [ ] Tests cover generic use cases (not just Baalam)
+├─ [ ] Tests cover generic use cases (not just Balam)
 ├─ [ ] Documentation includes other business examples
-├─ [ ] No tight coupling to Baalam-specific services
+├─ [ ] No tight coupling to Balam-specific services
 ├─ [ ] Plugin hooks exist instead of inline customization
 └─ [ ] Code is agnostic to business type
 
@@ -194,7 +194,7 @@ Component Quality Checklist
 
 ## Success Criteria
 
-### Week 4 (End of Baalam MVP)
+### Week 4 (End of Balam MVP)
 - [ ] 70% of code is reusable/generic
 - [ ] 3 core packages ready for extraction
 - [ ] Configuration file replaces 80% of business logic
@@ -202,7 +202,7 @@ Component Quality Checklist
 
 ### Week 6 (After First Extraction)
 - [ ] Next business site can launch in <1 week
-- [ ] 20% of Baalam code is reused in new site
+- [ ] 20% of Balam code is reused in new site
 - [ ] Configuration-driven approach validated
 
 ### Week 12 (Scaling Phase)

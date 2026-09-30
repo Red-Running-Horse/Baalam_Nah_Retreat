@@ -1,4 +1,4 @@
-# Quick Reference: Reusability Principles for Baalam Development
+# Quick Reference: Reusability Principles for Balam Development
 
 Use this one-page reference while coding to maintain reusability.
 
@@ -7,12 +7,12 @@ Use this one-page reference while coding to maintain reusability.
 ### 1️⃣ NO HARDCODING
 ```javascript
 // ❌ DON'T DO THIS
-const RETREAT_NAME = "Baalam-Nah Retreat";
+const RETREAT_NAME = "Balam-Nah Retreat";
 const TOKEN_REWARD = 50;
 const MAX_GUESTS = 50;
 
 // ✅ DO THIS INSTEAD
-import config from './baalam.config.toml';
+import config from './balam.config.toml';
 const retreatName = config.business.name;
 const tokenReward = config.rewards.base_token_per_booking;
 const maxGuests = config.booking.max_capacity;
@@ -58,7 +58,7 @@ bookingService.on('afterCreate', async (booking) => {
 ```javascript
 // ❌ DON'T DO THIS - Mixing generic and specific
 function calculateRewardForRetreat(booking) {
-  let tokens = 50; // Baalam specific
+  let tokens = 50; // Balam specific
   if (booking.partySize > 20) tokens *= 0.95;
   return tokens;
 }
@@ -95,18 +95,18 @@ src/
 │   ├── RewardService.js
 │   └── ReviewService.js
 │
-├── hooks/              ← Baalam-specific plugins
+├── hooks/              ← Balam-specific plugins
 │   ├── useGuideAssignment.js
 │   ├── useWeatherAlert.js
 │   └── usePhotoSync.js
 │
 ├── components/         ← UI components (mix reusable + custom)
 │   ├── BookingCalendar.jsx    ← Reusable (core package)
-│   ├── BalaamsSpecialOffer.jsx ← Baalam-specific
+│   ├── BalaamsSpecialOffer.jsx ← Balam-specific
 │   └── TokenReward.jsx         ← Reusable (core package)
 │
 ├── config/
-│   └── baalam.config.toml      ← All business logic here
+│   └── balam.config.toml      ← All business logic here
 │
 └── pages/
     ├── BookingPage.jsx         ← Uses generic services + config
@@ -122,7 +122,7 @@ Your config file should answer:
 ```toml
 # WHAT is this business?
 [business]
-name = "Baalam-Nah Retreat"
+name = "Balam-Nah Retreat"
 type = "group_experience"
 
 # WHEN are they available?
@@ -189,9 +189,9 @@ describe('Booking workflow', () => {
 - [ ] Generic logic extracted to service
 - [ ] Plugin hooks exist for customization
 - [ ] Code passes "restaurant test" (would work there?)
-- [ ] Test covers generic scenarios, not just Baalam
+- [ ] Test covers generic scenarios, not just Balam
 - [ ] Comments explain WHY, not WHAT
-- [ ] No tight coupling to other Baalam services
+- [ ] No tight coupling to other Balam services
 - [ ] Error messages are generic
 - [ ] Documentation includes other business examples
 
@@ -201,7 +201,7 @@ describe('Booking workflow', () => {
 
 ### ❌ Pattern 1: Hardcoded Business Logic
 ```javascript
-if (businessName === 'Baalam') {
+if (businessName === 'Balam') {
   // Do special thing
 }
 ```
@@ -237,7 +237,7 @@ async function handleBooking() {
 
 ## Key Npm Packages to Extract
 
-**Priority 1 (Extract from Baalam MVP):**
+**Priority 1 (Extract from Balam MVP):**
 - `@fcpqroo/core-wallet` - fedi.xyz integration
 - `@fcpqroo/core-rewards` - token calculation engine
 - `@fcpqroo/core-storage` - PocketBase wrapper
@@ -267,8 +267,8 @@ async function handleBooking() {
 find src -name "*.js" -o -name "*.jsx" | xargs wc -l
 
 # Estimate generic vs specific
-# Generic = services/, components/, hooks/ (except Baalam-specific ones)
-# Specific = Baalam-only components, Baalam-specific config
+# Generic = services/, components/, hooks/ (except Balam-specific ones)
+# Specific = Balam-only components, Balam-specific config
 ```
 
 ---
@@ -283,7 +283,7 @@ find src -name "*.js" -o -name "*.jsx" | xargs wc -l
 - ✅ Stable API
 
 **Don't extract when:**
-- ❌ Only used in Baalam
+- ❌ Only used in Balam
 - ❌ Still rapidly changing
 - ❌ Poor test coverage
 - ❌ Unclear interface
@@ -317,7 +317,7 @@ When you make a reusability decision, record it:
 
 ## Quick Wins for Reusability
 
-1. **Extract configuration first** (baalam.config.toml)
+1. **Extract configuration first** (balam.config.toml)
    - 30 min → 30% of work
    
 2. **Create interfaces before implementation**
@@ -337,8 +337,8 @@ When you make a reusability decision, record it:
 ## Reach Out When
 
 - ❓ You're about to hardcode a value → Use config
-- ❓ You see Baalam-specific logic → Plugin or interface
-- ❓ Component is only for Baalam → Make it configurable
+- ❓ You see Balam-specific logic → Plugin or interface
+- ❓ Component is only for Balam → Make it configurable
 - ❓ You have questions about patterns → Check COMPONENT_REUSABILITY_STRATEGY.md
 
 Remember: **Building once for 100 businesses is better than building 100 times for 1 business.**

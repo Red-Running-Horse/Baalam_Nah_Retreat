@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Deploy the Baalam-Nah static site to Hostinger.
+# Deploy the Balam-Nah static site to Hostinger.
 #
 # Usage:
 #   bash deploy_baalam_hostinger.sh
@@ -26,8 +26,8 @@ fi
 SSH_HOST="${SSH_HOST:-82.197.80.20}"
 SSH_PORT="${SSH_PORT:-65002}"
 SSH_USER="${SSH_USER:-u853557685}"
-REMOTE_WEB_ROOT="${REMOTE_WEB_ROOT:-/home/u853557685/domains/baalamnah.fcpqroo.mx/public_html}"
-SITE_URL="${SITE_URL:-https://baalamnah.fcpqroo.mx}"
+REMOTE_WEB_ROOT="${REMOTE_WEB_ROOT:-/home/u853557685/domains/balamnah.fcpqroo.mx/public_html}"
+SITE_URL="${SITE_URL:-https://balamnah.fcpqroo.mx}"
 APP_DIR="${APP_DIR:-$SCRIPT_DIR/Project References/horizons-export-90021aa3-5e36-403a-b9b6-24f4f6e8230d/apps/web}"
 DIST_DIR="${DIST_DIR:-}"
 SSH_KEY_PATH="${SSH_KEY_PATH:-$HOME/.ssh/hostinger_deploy_ed25519}"
@@ -82,7 +82,7 @@ run_remote() {
 }
 
 echo "=========================================="
-echo "  BAALAM-NAH DEPLOY (HOSTINGER STATIC)"
+echo "  BALAM-NAH DEPLOY (HOSTINGER STATIC)"
 echo "=========================================="
 echo "Remote: $REMOTE"
 echo "Path:   $REMOTE_WEB_ROOT"
@@ -167,7 +167,7 @@ fi
 
 echo "4) Verifying live site responses..."
 html_bundle="$(curl -fsS "$SITE_URL" | grep -o 'index-[^"]*\.js' | head -n 1 || true)"
-logo_type="$(curl -sI "$SITE_URL/logo-baalam-nah.avif" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type" {print $2}')"
+logo_type="$(curl -sI "$SITE_URL/balam-nah-app-icon.png" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type" {print $2}')"
 
 if [[ -n "$html_bundle" ]]; then
   echo "   Active bundle: $html_bundle"

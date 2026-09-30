@@ -8,15 +8,15 @@ web
 
 ## Users
 
-The primary audience is travelers and local families evaluating a day visit to Baalam-Nah. Secondary audiences include groups considering gatherings, overnight guests considering cabins, domes, or camping, and community partners interested in the property's longer-term role.
+The primary audience is travelers and local families evaluating a day visit to Balam-Nah. Secondary audiences include groups considering gatherings, overnight guests considering cabins, domes, or camping, and community partners interested in the property's longer-term role.
 
 ## Product Purpose
 
-Baalam-Nah presents a lagoon retreat in Quintana Roo and helps visitors understand the experience, trust the place, and begin planning a visit through WhatsApp. Success means a visitor can quickly see what is available, understand the property's character and context, and make a qualified inquiry.
+Balam-Nah presents a lagoon retreat in Quintana Roo and helps visitors understand the experience, trust the place, and begin planning a visit through WhatsApp. Success means a visitor can quickly see what is available, understand the property's character and context, and make a qualified inquiry.
 
 ## Positioning
 
-Baalam-Nah is not an interchangeable resort: it is a lagoon-centered day retreat connected to the living Maya territory and community of X-Hazil Sur, with a broader vision for local tourism, stewardship, gatherings, and community economic participation.
+Balam-Nah is not an interchangeable resort: it is a lagoon-centered day retreat connected to the living Maya territory and community of X-Hazil Sur, with a broader vision for local tourism, stewardship, gatherings, and community economic participation.
 
 ## Operating Context
 
@@ -31,7 +31,7 @@ Visitors primarily discover and evaluate the property on mobile devices. The lau
 
 ## Brand Commitments
 
-- The correct business name is **Baalam-Nah**. The former spelling **Balam-Na** is incorrect and must not appear as the current brand.
+- The correct business name is **Balam-Nah**. The former spelling **Balam-Na** is incorrect and must not appear as the current brand.
 - The site must communicate both the visitor experience and the larger vision of the property.
 - Spanish is the primary language; English must be fully supported.
 - The voice should be hospitable, grounded, place-specific, and respectful of the community and landscape.
@@ -42,7 +42,7 @@ Visitors primarily discover and evaluate the property on mobile devices. The lau
 - `Project References/historia-ejido-x-hazil-sur_compress.txt` documents the history, land management, forestry, and community-protected reserve of Ejido X-Hazil Sur.
 - `docs/ECOSYSTEM_ARCHITECTURE.md` and `docs/chat-continuity.md` document the broader community-business and local-economy vision.
 - A prior website export exists at `Project References/horizons-export-90021aa3-5e36-403a-b9b6-24f4f6e8230d.zip`; it is evidence for factual contact and operating details, not visual or naming authority.
-- No testimonials, prices, operating hours, environmental certifications belonging specifically to Baalam-Nah, or guaranteed booking availability have been confirmed. They must not be invented.
+- No testimonials, prices, operating hours, environmental certifications belonging specifically to Balam-Nah, or guaranteed booking availability have been confirmed. They must not be invented.
 
 ## Product Principles
 

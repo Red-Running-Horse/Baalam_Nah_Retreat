@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Globe2, Menu, MessageCircle, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import { getWhatsAppUrl } from '../lib/contact.js';
-import logoDark from '../../../../../../brand/baalam-nah-logo-dark-compact.png';
-import logoLight from '../../../../../../brand/baalam-nah-logo-light-compact.png';
+import logo from '../../../../../../brand/Balam-Nah Logo.svg';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,13 +38,9 @@ const Header = () => {
       <a
         className="wordmark"
         href="#inicio"
-        aria-label={t({ es: 'Baalam-Nah, inicio', en: 'Baalam-Nah, home' })}
+        aria-label={t({ es: 'Balam-Nah, inicio', en: 'Balam-Nah, home' })}
       >
-        <img
-          className="wordmark-logo"
-          src={solidHeader ? logoLight : logoDark}
-          alt=""
-        />
+        <img className="wordmark-logo" src={logo} alt="" />
       </a>
 
       <nav className="desktop-nav" aria-label={t({ es: 'Navegación principal', en: 'Primary navigation' })}>

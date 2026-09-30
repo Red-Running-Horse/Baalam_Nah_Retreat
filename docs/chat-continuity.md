@@ -10,7 +10,7 @@ Track discussion topics, decisions, open questions, and next actions across sess
 ## Project Ecosystem Context (CRITICAL)
 
 ### Strategic Vision
-**Baalam_Nah_Retreat** is a test case and pilot business integration for the larger **fcpqroo ecosystem**:
+**Balam_Nah_Retreat** is a test case and pilot business integration for the larger **fcpqroo ecosystem**:
 
 1. **fcpqroo.mx** - Community business directory & promotion platform
    - Business listings and discovery
@@ -26,7 +26,7 @@ Track discussion topics, decisions, open questions, and next actions across sess
    - Acts as community loyalty currency
    - Validates transactions between businesses
 
-4. **Baalam_Nah_Retreat Integration Role**
+4. **Balam_Nah_Retreat Integration Role**
    - Pilot site for booking + token rewards system
    - Tests integration with fedi.xyz for customer/volunteer rewards
    - Models business directory entry with promotions/reviews
@@ -57,7 +57,7 @@ Track discussion topics, decisions, open questions, and next actions across sess
 
 ### Topics Discussed
 - Full ecosystem context provided
-- Strategic role of Baalam_Nah_Retreat clarified
+- Strategic role of Balam_Nah_Retreat clarified
 - Integration requirements with fcpqroo.mx and fedi.xyz identified
 
 ### Decisions

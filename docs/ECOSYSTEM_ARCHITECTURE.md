@@ -1,7 +1,7 @@
 # FCPQROO Ecosystem Architecture
 
 ## Overview
-Baalam_Nah_Retreat is a pilot business integration within the larger fcpqroo community ecosystem. This document outlines the architecture, integration points, and data flows.
+Balam_Nah_Retreat is a pilot business integration within the larger fcpqroo community ecosystem. This document outlines the architecture, integration points, and data flows.
 
 ## System Components
 
@@ -13,7 +13,7 @@ Baalam_Nah_Retreat is a pilot business integration within the larger fcpqroo com
 - Unified review system
 - Tourism/local access
 
-**Integration Point with Baalam_Nah_Retreat**:
+**Integration Point with Balam_Nah_Retreat**:
 - Pull business profile from fcpqroo.mx
 - Submit bookings/events data back to directory
 - Participate in coordinated promotions
@@ -27,7 +27,7 @@ Baalam_Nah_Retreat is a pilot business integration within the larger fcpqroo com
 - Reward claiming
 - Token transfers between users
 
-**Integration Point with Baalam_Nah_Retreat**:
+**Integration Point with Balam_Nah_Retreat**:
 - User authentication/wallet integration
 - Reward issuance after bookings
 - Volunteer reward distribution
@@ -45,7 +45,7 @@ Baalam_Nah_Retreat is a pilot business integration within the larger fcpqroo com
 - Purpose: Business ecosystem rewards, loyalty, volunteer compensation
 - Integration: Issued via fedi.xyz, tracked in blockchain
 
-### 4. Baalam_Nah_Retreat (This Application)
+### 4. Balam_Nah_Retreat (This Application)
 **Purpose**: Retreat booking platform + pilot for ecosystem integration
 **Type**: React/Vite SPA deployed to Hostinger
 
@@ -60,7 +60,7 @@ Baalam_Nah_Retreat is a pilot business integration within the larger fcpqroo com
            │ 1. Profile sync, 2. Submit bookings/reviews
            │
 ┌──────────▼──────────────────────────────────────────────────────┐
-│           Baalam_Nah_Retreat (Booking Platform)                 │
+│           Balam_Nah_Retreat (Booking Platform)                 │
 │  [Bookings] [Reviews] [Promotions] [Calendar] [Payments]        │
 └──────────┬──────────────────────────────────────────────────────┘
            │ 3. Trigger reward issuance, user auth
@@ -132,7 +132,7 @@ Baalam_Nah_Retreat is a pilot business integration within the larger fcpqroo com
 
 ### Authentication Flow
 ```
-User (Mobile fedi.xyz) → Wallet Connect → Baalam_Nah_Retreat
+User (Mobile fedi.xyz) → Wallet Connect → Balam_Nah_Retreat
                                          ↓
                               Verify with fedi.xyz
                                          ↓
