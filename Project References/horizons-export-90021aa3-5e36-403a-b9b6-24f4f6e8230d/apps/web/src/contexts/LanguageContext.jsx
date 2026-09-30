@@ -13,12 +13,12 @@ export const useLanguage = () => {
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
-    return window.localStorage.getItem('baalam-nah-language') || 'es';
+    return window.localStorage.getItem('balam-nah-language') || 'es';
   });
 
   useEffect(() => {
     document.documentElement.lang = language;
-    window.localStorage.setItem('baalam-nah-language', language);
+    window.localStorage.setItem('balam-nah-language', language);
   }, [language]);
   
   const toggleLanguage = () => {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-08-09T14:16:36.918-05:00",
-  "title": "Design System: Baalam-Nah",
+  "title": "Design System: Balam-Nah",
   "extensions": {
     "colorMeta": {
       "water": {
@@ -137,7 +137,7 @@
       "name": "Watchful Lagoon Brand Mark",
       "kind": "custom",
       "description": "The primary identity: connected lagoons surrounded by careful jaguar tracks, expressing watchfulness without aggression.",
-      "html": "<svg class=\"ds-logo\" viewBox=\"0 0 220 180\" aria-label=\"Baalam-Nah\"><path class=\"shore\" d=\"M18 42c42-25 85-26 123-2 23 15 42 18 63 12-16 25-39 39-67 43-47 7-87-11-119-53Z\"/><path class=\"shore\" d=\"M19 138c32-41 71-59 118-52 28 4 51 18 67 43-21-6-41-3-64 12-37 24-80 23-121-3Z\"/><path class=\"channel\" d=\"M76 88c13-12 25-20 35-24 11 4 23 12 35 24-9 4-16 11-19 20-11-5-22-5-33 0-3-9-9-16-18-20Z\"/></svg>",
+      "html": "<svg class=\"ds-logo\" viewBox=\"0 0 220 180\" aria-label=\"Balam-Nah\"><path class=\"shore\" d=\"M18 42c42-25 85-26 123-2 23 15 42 18 63 12-16 25-39 39-67 43-47 7-87-11-119-53Z\"/><path class=\"shore\" d=\"M19 138c32-41 71-59 118-52 28 4 51 18 67 43-21-6-41-3-64 12-37 24-80 23-121-3Z\"/><path class=\"channel\" d=\"M76 88c13-12 25-20 35-24 11 4 23 12 35 24-9 4-16 11-19 20-11-5-22-5-33 0-3-9-9-16-18-20Z\"/></svg>",
       "css": ".ds-logo { width:220px; height:auto; } .ds-logo .shore { fill:var(--water); } .ds-logo .channel { fill:var(--lagoon); }"
     },
     {
@@ -189,7 +189,7 @@
   ],
   "narrative": {
     "northStar": "The Living Lagoon Ledger",
-    "overview": "Baalam-Nah is documented like a field record that happens to be alive: monumental names, precise coordinates, folio indexes, route traces, and practical entries sit directly against documentary photographs of the lagoon and property. The system is confident and place-specific rather than resort-polished. Water is both the subject and the organizing device.\n\nIts visual rhythm moves between immersive photographic fields and emphatic blocks of cyan, yellow, paper, and deep blue. Editorial asymmetry, oversized type, square-edged panels, and sparse map notation keep the experience grounded in evidence while giving it a recognizable authored voice.",
+    "overview": "Balam-Nah is documented like a field record that happens to be alive: monumental names, precise coordinates, folio indexes, route traces, and practical entries sit directly against documentary photographs of the lagoon and property. The system is confident and place-specific rather than resort-polished. Water is both the subject and the organizing device.\n\nIts visual rhythm moves between immersive photographic fields and emphatic blocks of cyan, yellow, paper, and deep blue. Editorial asymmetry, oversized type, square-edged panels, and sparse map notation keep the experience grounded in evidence while giving it a recognizable authored voice.",
     "keyCharacteristics": [
       "Monumental condensed display type paired with plainspoken body copy and monospaced field labels.",
       "Documentary photography used at architectural scale, never as incidental decoration.",

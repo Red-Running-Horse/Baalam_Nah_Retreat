@@ -54,19 +54,19 @@ const HomePage = () => {
     <>
       <Helmet>
         <title>{t({
-          es: 'Baalam-Nah | Laguna, naturaleza y comunidad en X-Hazil Sur',
-          en: 'Baalam-Nah | Lagoon, nature and community in X-Hazil Sur',
+          es: 'Balam-Nah | Laguna, naturaleza y comunidad en X-Hazil Sur',
+          en: 'Balam-Nah | Lagoon, nature and community in X-Hazil Sur',
         })}</title>
         <meta
           name="description"
           content={t({
-            es: 'Planea un día en la laguna de Baalam-Nah: natación, kayak, piscina, cabañas, domos, campamento y encuentros en X-Hazil Sur, Quintana Roo.',
-            en: 'Plan a day at the Baalam-Nah lagoon: swimming, kayaking, pool, cabins, domes, camping and gatherings in X-Hazil Sur, Quintana Roo.',
+            es: 'Planea un día en la laguna de Balam-Nah: natación, kayak, piscina, cabañas, domos, campamento y encuentros en X-Hazil Sur, Quintana Roo.',
+            en: 'Plan a day at the Balam-Nah lagoon: swimming, kayaking, pool, cabins, domes, camping and gatherings in X-Hazil Sur, Quintana Roo.',
           })}
         />
       </Helmet>
 
-      {/* THESIS: Baalam-Nah is read as a living lagoon ledger, not a generic eco-resort.
+      {/* THESIS: Balam-Nah is read as a living lagoon ledger, not a generic eco-resort.
           OWN-WORLD: Deep water blue, field-map cyan, sun yellow, route lines, folio tabs, and documentary photography.
           STORY: See the water, understand the day, discover ways to stay, then place the retreat inside X-Hazil Sur's larger land story.
           FIRST VIEWPORT: An aerial lagoon fills the frame; a giant wordmark and traced route sit over water, with a practical visit ledger and WhatsApp action at right.
@@ -77,8 +77,8 @@ const HomePage = () => {
             className="hero-image"
             src={lagoonAerial}
             alt={t({
-              es: 'Vista aérea de las lagunas y la selva alrededor de Baalam-Nah',
-              en: 'Aerial view of the lagoons and forest surrounding Baalam-Nah',
+              es: 'Vista aérea de las lagunas y la selva alrededor de Balam-Nah',
+              en: 'Aerial view of the lagoons and forest surrounding Balam-Nah',
             })}
           />
           <div className="hero-wash" />
@@ -100,7 +100,7 @@ const HomePage = () => {
               animate={{ clipPath: 'inset(0 0% 0 0)' }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
-              Baalam-Nah
+              Balam-Nah
             </motion.h1>
             <p>{t({
               es: 'La laguna marca el rumbo.',
@@ -161,8 +161,8 @@ const HomePage = () => {
               en: 'Here, the water shapes the day.',
             })}</h2>
             <p>{t({
-              es: 'Llegar, elegir una orilla y dejar que el ritmo cambie. Baalam-Nah es un lugar para nadar, remar, conversar, comer juntos y quedarse un poco más.',
-              en: 'Arrive, choose a shoreline and let the pace change. Baalam-Nah is a place to swim, paddle, talk, eat together and stay a little longer.',
+              es: 'Llegar, elegir una orilla y dejar que el ritmo cambie. Balam-Nah es un lugar para nadar, remar, conversar, comer juntos y quedarse un poco más.',
+              en: 'Arrive, choose a shoreline and let the pace change. Balam-Nah is a place to swim, paddle, talk, eat together and stay a little longer.',
             })}</p>
           </div>
           <figure className="dock-figure">
@@ -266,8 +266,8 @@ const HomePage = () => {
               en: 'A property with a long horizon.',
             })}</h2>
             <p>{t({
-              es: 'Baalam-Nah forma parte de una visión más amplia: turismo local, encuentros, colaboración y nuevas maneras de fortalecer la economía comunitaria sin perder de vista el territorio.',
-              en: 'Baalam-Nah is part of a broader vision: local tourism, gatherings, collaboration and new ways to strengthen the community economy without losing sight of the land.',
+              es: 'Balam-Nah forma parte de una visión más amplia: turismo local, encuentros, colaboración y nuevas maneras de fortalecer la economía comunitaria sin perder de vista el territorio.',
+              en: 'Balam-Nah is part of a broader vision: local tourism, gatherings, collaboration and new ways to strengthen the community economy without losing sight of the land.',
             })}</p>
             <div className="history-note">
               <span>1936</span>
@@ -294,8 +294,8 @@ const HomePage = () => {
           <img
             src={volunteerPhoto}
             alt={t({
-              es: 'Grupo de voluntarios reunido en Baalam-Nah',
-              en: 'Volunteer group gathered at Baalam-Nah',
+              es: 'Grupo de voluntarios reunido en Balam-Nah',
+              en: 'Volunteer group gathered at Balam-Nah',
             })}
           />
           <div className="gather-overlay">

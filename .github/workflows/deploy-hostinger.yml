@@ -1,4 +1,4 @@
-name: Deploy Baalam-Nah
+name: Deploy Balam-Nah
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: baalam-nah-production
+  group: balam-nah-production
   cancel-in-progress: true
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: production
-      url: https://baalamnah.fcpqroo.mx
+      url: https://balamnah.fcpqroo.mx
 
     steps:
       - name: Check out repository
@@ -83,14 +83,14 @@ jobs:
             if curl --fail --silent --show-error \
               --header "Cache-Control: no-cache" \
               --retry 2 \
-              "https://baalamnah.fcpqroo.mx/?deployment=${GITHUB_SHA}" \
+              "https://balamnah.fcpqroo.mx/?deployment=${GITHUB_SHA}" \
               --output "$homepage"; then
               script_path="$(grep -oE 'src="[^"]+\.js"' "$homepage" | head -1 | cut -d'"' -f2)"
-              if grep --quiet "Baalam-Nah" "$homepage" &&
+              if grep --quiet "Balam-Nah" "$homepage" &&
                 test -n "$script_path" &&
                 curl --fail --silent --show-error \
                   --head \
-                  "https://baalamnah.fcpqroo.mx${script_path}" |
+                  "https://balamnah.fcpqroo.mx${script_path}" |
                   grep -Eiq '^content-type: (application|text)/(x-)?javascript'; then
                 rm -f "$homepage"
                 exit 0

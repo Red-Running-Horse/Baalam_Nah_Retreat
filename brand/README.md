@@ -1,40 +1,16 @@
-# Baalam-Nah logo kit
+# Balam-Nah logo kit
 
-The approved Baalam-Nah identity follows the connected lagoon system with careful jaguar tracks. The tracks communicate watchfulness and measured movement rather than danger or aggression.
+The supplied Balam-Nah logo kit is available in three formats:
 
-## Production assets
+- `Balam-Nah Logo.svg` — scalable vector artwork for the site header and footer.
+- `Balam-Nah Logo.png` — 2000 × 2000 raster artwork with transparency support where applicable.
+- `Balam-Nah Logo.jpg` — 2000 × 2000 raster artwork for contexts that require a JPEG.
 
-- `baalam-nah-logo-light-compact.png` — transparent dark artwork for light backgrounds
-- `baalam-nah-logo-dark-compact.png` — transparent warm-white artwork for dark backgrounds
-- `baalam-nah-logo-dark-full.png` — full dark-background lockup with descriptor
-- `baalam-nah-social-share.jpg` — 1200 × 630 website/social sharing image
-- `baalam-nah-app-icon.png` — 512 × 512 browser and application icon
-
-The original Canva exports are retained unchanged in `source/`.
+The older `balam-nah-*` files are retained for compatibility with previous exports. New site metadata uses copies of the supplied PNG and JPG as the favicon, Apple touch icon, and social-share image.
 
 ## Usage
 
-- Use the light compact logo on white, Ledger Paper, Lagoon Cyan, or Sun Yellow.
-- Use the dark compact logo over Deep Water, Water Deep, or dark photography.
-- Use the full dark logo where the descriptor remains legible, such as the website footer, presentations, and large signs.
-- Do not recolor individual paw prints, distort the lagoon chain, add effects, or place the logo inside an unrelated badge.
-
-## Clear space
-
-Keep clear space around the logo equal to the height of the capital **B** counter. Avoid placing text or high-contrast photography inside this area.
-
-## Minimum size
-
-- Compact lockup: 170 px digital or 45 mm print
-- Full lockup with descriptor: 320 px digital or 90 mm print
-- App icon: 32 px minimum
-
-## Colors
-
-- Deep Water: `#073b4c`
-- Water Deep: `#042a38`
-- Warm White: `#fffdf7`
-
-## Production note
-
-These supplied assets are raster PNG files. For large roadside fabrication, request an SVG, PDF, or EPS vector export from Canva before sending the logo to a sign vendor.
+- Prefer the SVG for responsive web branding.
+- Use the PNG where a raster image or transparency is needed.
+- Use the JPG for social or photo-oriented contexts that require JPEG.
+- Do not recolor, distort, add effects, or place the logo inside an unrelated badge.

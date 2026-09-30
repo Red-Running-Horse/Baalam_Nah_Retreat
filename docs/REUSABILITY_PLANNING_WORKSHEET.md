@@ -2,7 +2,7 @@
 
 ## Part 1: Current Project Inventory
 
-### Existing Components (from Baalam_Nah_Retreat)
+### Existing Components (from Balam_Nah_Retreat)
 
 Based on the project structure, we have or will create:
 
@@ -91,7 +91,7 @@ For each component, score (1-5) on reusability potential:
 
 **Question: What varies between businesses?**
 
-| Decision | Baalam | Restaurant | Hotel | Solution |
+| Decision | Balam | Restaurant | Hotel | Solution |
 |----------|--------|-----------|-------|----------|
 | Slot duration | 4 hrs | 90 min | N/A (range) | CONFIG |
 | Capacity | 50 people | 100 seats | 150 rooms | CONFIG |
@@ -108,7 +108,7 @@ For each component, score (1-5) on reusability potential:
 
 ### Reward Engine - Decision Tree
 
-| Decision | Baalam | Restaurant | Hotel | Solution |
+| Decision | Balam | Restaurant | Hotel | Solution |
 |----------|--------|-----------|-------|----------|
 | Base reward | 50 tokens | 10 tokens | 100 tokens | CONFIG |
 | Review bonus | 5 tokens | 3 tokens | 10 tokens | CONFIG |
@@ -223,7 +223,7 @@ interface DataStore {
   └─ Enables PocketBase flexibility
 ```
 
-**Timeline**: Week 1-2 of Baalam development
+**Timeline**: Week 1-2 of Balam development
 
 ### Medium Priority (Build Concurrently)
 ```
@@ -234,7 +234,7 @@ interface DataStore {
   └─ Most reused UI component
 ```
 
-**Timeline**: Week 2-3 of Baalam development
+**Timeline**: Week 2-3 of Balam development
 
 ### Lower Priority (Extract Later)
 ```
@@ -245,13 +245,13 @@ interface DataStore {
   └─ Fewer users, more specialized
 ```
 
-**Timeline**: After Baalam MVP, before scaling
+**Timeline**: After Balam MVP, before scaling
 
 ---
 
 ## Part 7: Business-Specific Extension Points
 
-### Baalam_Nah_Retreat Specific
+### Balam_Nah_Retreat Specific
 
 **Plugin Hooks Needed**:
 1. `beforeBooking` - Verify guide availability
@@ -361,7 +361,7 @@ fcpqroo (monorepo)
 │   └── ui/
 │       └── booking
 └── sites/
-    ├── baalam-nah-retreat
+    ├── balam-nah-retreat
     ├── fcpqroo-restaurant
     └── fcpqroo-hotel
 ```

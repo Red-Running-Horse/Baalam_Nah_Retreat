@@ -1,7 +1,7 @@
 # Component Reusability Strategy for fcpqroo Ecosystem
 
 ## Executive Summary
-Baalam_Nah_Retreat is the **first implementation** of an integrated booking + token rewards system for fcpqroo. To maximize value across all future business sites, we must architect components as:
+Balam_Nah_Retreat is the **first implementation** of an integrated booking + token rewards system for fcpqroo. To maximize value across all future business sites, we must architect components as:
 - **Generic + Configurable** (not hardcoded to retreat specifics)
 - **Modular + Composable** (mix-and-match features)
 - **Shareable + Maintainable** (npm packages or monorepo)
@@ -11,7 +11,7 @@ Baalam_Nah_Retreat is the **first implementation** of an integrated booking + to
 
 Different businesses will have different needs:
 
-### Scenario A: Baalam_Nah_Retreat (Current)
+### Scenario A: Balam_Nah_Retreat (Current)
 - **Type**: Group retreat/experience
 - **Booking Model**: Date-based, group capacity
 - **Key Features**: Calendar, group size, guide assignment
@@ -74,7 +74,7 @@ Different businesses will have different needs:
 ```
 ┌────────────────────────────────────────────────────────┐
 │    Business-Specific Implementation                    │
-│  (e.g., Baalam_Nah_Retreat, Restaurant, etc.)         │
+│  (e.g., Balam_Nah_Retreat, Restaurant, etc.)         │
 │                                                        │
 │  • Config (capacity, rewards, hours)                   │
 │  • Custom UI (branding, theme)                         │
@@ -105,7 +105,7 @@ class BookingService {
   }
 }
 
-// Baalam_Nah_Retreat config
+// Balam_Nah_Retreat config
 const balaamsConfig = {
   maxCapacity: 50,
   slotDurationMinutes: 240, // 4-hour retreats
@@ -201,7 +201,7 @@ class BookingService {
   }
 }
 
-// Baalam plugins
+// Balam plugins
 const balaamsPlugins = {
   beforeCreate: [
     async (userId, slotId, details) => {
@@ -277,7 +277,7 @@ class BookingOrchestrator {
   └── @fcpqroo/ui-theme           # Tailwind config, Radix setup
 
 Business Sites
-  ├── Baalam_Nah_Retreat (current)
+  ├── Balam_Nah_Retreat (current)
   ├── fcpqroo-restaurant (next?)
   ├── fcpqroo-accommodation (next?)
   └── fcpqroo-services (next?)
@@ -299,7 +299,7 @@ Business Sites
 ### Business-Specific Schema Extensions
 
 ```javascript
-// Baalam_Nah_Retreat extends base schema
+// Balam_Nah_Retreat extends base schema
 const balaamsSchema = {
   ...baseBookingSchema,
   guide_assigned: string,
@@ -364,10 +364,10 @@ All businesses follow this pattern, but with configurable steps:
 ### Single Config File Per Business (TOML/YAML)
 
 ```toml
-# baalam.config.toml
+# balam.config.toml
 [business]
-name = "Baalam-Nah Retreat"
-id = "baalam_nah_retreat"
+name = "Balam-Nah Retreat"
+id = "balam_nah_retreat"
 description = "Day retreat at Lagunas de Ocom"
 timezone = "America/Mexico_City"
 
@@ -407,7 +407,7 @@ email_provider = "sendgrid"
 
 ## Reusability Checklist
 
-When developing Baalam components, ask:
+When developing Balam components, ask:
 
 - [ ] **Is this hardcoded?** → Make it configurable
 - [ ] **Is this business-specific?** → Move to plugin/extension point
@@ -420,14 +420,14 @@ When developing Baalam components, ask:
 
 ## Implementation Roadmap (Reusability-First)
 
-### Phase 1A: Extract Core Abstractions (BEFORE building Baalam-specific)
+### Phase 1A: Extract Core Abstractions (BEFORE building Balam-specific)
 - [ ] Define IBookingService interface
 - [ ] Define IRewardService interface
 - [ ] Define IReviewService interface
 - [ ] Create @fcpqroo/core-wallet (reusable fedi.xyz wrapper)
 - [ ] Create @fcpqroo/core-rewards (generic token logic)
 
-### Phase 1B: Build Baalam with Reusability in Mind
+### Phase 1B: Build Balam with Reusability in Mind
 - [ ] Implement BalaamsBookingService (extends IBookingService)
 - [ ] Use config file for all business logic
 - [ ] Create plugin hooks for guides, photos, etc.
@@ -460,7 +460,7 @@ When developing Baalam components, ask:
 ## Risk Mitigation
 
 ### Risk: "Premature Abstraction"
-**Mitigation**: Build Baalam fully first, then extract reusable patterns. Don't over-engineer.
+**Mitigation**: Build Balam fully first, then extract reusable patterns. Don't over-engineer.
 
 ### Risk: "Shared Code Becomes Monolith"
 **Mitigation**: Keep npm packages small and focused. One concern per package.
@@ -473,7 +473,7 @@ When developing Baalam components, ask:
 
 ## Next Steps
 
-1. **Map Baalam Specifics**: Identify what's retreat-specific vs generic
+1. **Map Balam Specifics**: Identify what's retreat-specific vs generic
 2. **Define Interfaces**: Create service contracts before building
 3. **Build Config File**: Define business logic in config first, code second
 4. **Create npm Package Scaffolding**: Template for next business site

@@ -1,6 +1,6 @@
-# Baalam-Nah
+# Balam-Nah
 
-Spanish-first bilingual website for the Baalam-Nah lagoon retreat in X-Hazil Sur, Quintana Roo.
+Spanish-first bilingual website for the Balam-Nah lagoon retreat in X-Hazil Sur, Quintana Roo.
 
 ## Local development
 
@@ -21,7 +21,7 @@ The Hostinger-ready static site is written to `dist/`.
 
 ## Hostinger deployment
 
-Every push to `main` runs `.github/workflows/deploy-hostinger.yml`, builds the site, and publishes `dist/` to `https://baalamnah.fcpqroo.mx`.
+Every push to `main` runs `.github/workflows/deploy-hostinger.yml`, builds the site, and publishes `dist/` to `https://balamnah.fcpqroo.mx`.
 
 Create a GitHub `production` environment with these secrets:
 
@@ -32,7 +32,7 @@ Create a GitHub `production` environment with these secrets:
 | `HOSTINGER_USER` | Hostinger SSH username |
 | `HOSTINGER_SSH_KEY` | Complete private SSH key matching a public key authorized by Hostinger |
 | `HOSTINGER_KNOWN_HOSTS` | Hostinger SSH host-key lines produced by `ssh-keyscan -p <port> <host>` |
-| `HOSTINGER_WEB_ROOT` | `/home/<user>/domains/baalamnah.fcpqroo.mx/public_html` |
+| `HOSTINGER_WEB_ROOT` | `/home/<user>/domains/balamnah.fcpqroo.mx/public_html` |
 
 The deploy key added to GitHub allows Hostinger to read the repository; it is not the private SSH key GitHub Actions needs to upload the built site.
 
@@ -43,4 +43,4 @@ npm run deploy:dry
 npm run deploy
 ```
 
-The deployment script supports SSH key or `SSH_PASS` authentication and defaults to `https://baalamnah.fcpqroo.mx`.
+The deployment script supports SSH key or `SSH_PASS` authentication and defaults to `https://balamnah.fcpqroo.mx`.
