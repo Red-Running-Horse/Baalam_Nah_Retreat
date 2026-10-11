@@ -111,7 +111,7 @@ button {
 .wordmark {
   display: flex;
   align-items: center;
-  width: clamp(10rem, 15vw, 12.5rem);
+  width: clamp(5rem, 7.5vw, 6.25rem);
 }
 
 .wordmark-logo {
@@ -1009,7 +1009,7 @@ button {
   }
 
   .wordmark {
-    width: 9rem;
+    width: 4.5rem;
   }
 
   .language-button {
